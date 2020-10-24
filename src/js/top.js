@@ -36,7 +36,7 @@ export default class Top {
     this.renderer = new WebGLRenderer()
     this.renderer.setSize(this.size.windowWidth, this.size.windowHeight)
     this.renderer.setClearColor(0x000000)
-    this.renderer.setPixelRatio(window.devicePixelRatio)
+    this.renderer.setPixelRatio(window.devicePixelRatio || 1)
     $canvas.appendChild(this.renderer.domElement)
 
     // this.camera = new OrthographicCamera(-1, 1, 1, -1, 0, 1)
