@@ -43,6 +43,7 @@ export default class Top {
     this.camera = new PerspectiveCamera()
     this.camera.position.set(0, 10, 150)
 
+    this.resize()
     this.shape()
     this.render()
   }
